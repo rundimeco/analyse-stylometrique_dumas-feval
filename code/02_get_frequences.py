@@ -2,7 +2,11 @@ import json
 import sys
 from numpy import cumsum
 
-fic = sys.argv[1]
+if len(sys.argv)==2:
+  fic = sys.argv[1]
+else:
+  fic = "patterns/patt_dumas_feval_min=4_max=5.json"
+  print(f"Using default file :{fic}") 
 
 f = open(fic)
 dic = json.load(f)

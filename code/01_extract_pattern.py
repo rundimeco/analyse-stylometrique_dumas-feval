@@ -3,6 +3,7 @@ import json
 import glob
 import re, os
 
+os.makedirs("patterns", exist_ok =True)
 #len_min = 1
 #len_max = 1
 
@@ -35,13 +36,12 @@ retour_au_texte = {}
 
 for mini in range(minlength,maxlength):
   for maxi in range(mini,maxlength+1):
-    #name = "patterns/patt_dumas_feval_min=%s_max=%s.json"%(str(mini), str(maxi))
-    name = "patterns/patt_feval_chapters46_min=%s_max=%s.json"%(str(mini), str(maxi))
+    name = "patterns/patt_dumas_feval_min=%s_max=%s.json"%(str(mini), str(maxi))
+    #name = "patterns/patt_feval_chapters46_min=%s_max=%s.json"%(str(mini), str(maxi))
     if os.path.exists(name) and force ==False:
       print(" file exists : %s, ... passing"%name2)
       continue
-    #liste_fic = glob.glob("corpus1/*/*")
-    liste_fic = glob.glob("corpus2_tagged/Feval/le-bossu_chapter46.*")
+    liste_fic = glob.glob("data/*/*")
     liste_patt_path = []
     set_patt = set()# ensemble = pas de doublons
     for path in liste_fic:

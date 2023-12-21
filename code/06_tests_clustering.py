@@ -49,4 +49,4 @@ for cpt, ligne in enumerate(matrix):
   dic_predict.setdefault(prediction.tobytes(), [])
   dic_predict[prediction.tobytes()].append(liste_fichiers[cpt])
   #print(liste_fichiers[cpt], " : ",prediction)
-  print(prediction)
+  print(prediction, liste_fichiers[cpt])

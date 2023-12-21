@@ -2,15 +2,29 @@
 
 Ce projet s'inscrit dans le cadre de mon mémoire de M2, 
 
+Le dossier data contient le corpus déjà taggé
+
 ## Prérequis
+Pour l'étiquetage du Corpus:
 * [Java](https://www.java.com/fr/download/) -
 * [Stanford tagger](https://nlp.stanford.edu/software/tagger.shtml) - Étiqueteur morphosyntaxique
+
+POur le reste :
 * [Python3](https://www.python.org/downloads/) - 
 * [NLTK](http://www.nltk.org/) - 
 * [Numpy](http://www.numpy.org/) - 
 * [Scikit-Learn](https://scikit-learn.org/) - Classification non-supervisée
 * [Scipy](https://www.scipy.org/) - Dendrogramme
 * [Mathplotlib](https://matplotlib.org/) - Affichage des graphiques
+
+
+
+## POur reproduire simplement le clustering
+```python3 01_extract_pattern.py```
+
+```python3 02_get_frequences.py patterns/patt_dumas_feval_min=4_max=5.json```
+
+```python3 06_tests_clustering.py patterns/patt_dumas_feval_min=4_max=5.json_freq.json```
 
 ## Préparation du corpus
 
@@ -60,13 +74,12 @@ Pour obtenir les fréquences, il faut lancer cette ligne :
 ## Classification non supervisée
 ```python3 06_tests_clustering.py patterns/patt_dumas_feval_min\=4_max\=5.json_freq.json```
 
-### K-means
-
 ### Dendrogramme
 
 ```pythonw 07_tests_dendogram.py patterns/patt_dumas_feval_min\=4_max\=5.json_freq.json```
 
-##Chapitres
+##Travail sur les cChapitres
+
 ```python 01_extract_pattern.py```
 ```python 02_get_frequences.py patterns/patt_dumas_les-trois-mousquetaires_min\=4_max\=5.json```
 ```python3 06_tests_clustering.py patterns/patt_dumas_les-trois-mousquetaires_min\=4_max\=5.json_freq.json```
@@ -84,7 +97,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
 # analyse-stylometrique_dumas-feval
