@@ -13,7 +13,11 @@ from numpy import ndarray
 import array
 
 
-fic = sys.argv[1]
+if len(sys.argv)==2:
+  fic = sys.argv[1]
+else:
+  fic = "patterns/patt_dumas_feval_min=4_max=5.json_freq.json"
+  print(f"Using default file :{fic}") 
 
 #Ouverture/récupération du fichier des patterns
 #f = open("patterns/patt_dumas_feval_minlen=1_maxlen=1.json")

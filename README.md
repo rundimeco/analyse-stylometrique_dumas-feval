@@ -20,11 +20,14 @@ POur le reste :
 
 
 ## POur reproduire simplement le clustering
+
+Réf : [article Phraseorom: Automatic Stylistic Analysis: a search for efficient and interpretable descriptors to characterize individual writing style](https://scholar.google.fr/citations?view_op=view_citation&hl=fr&user=OwbpslwAAAAJ&citation_for_view=OwbpslwAAAAJ:d1gkVwhDpl0C)
+
 ```python3 01_extract_pattern.py```
 
-```python3 02_get_frequences.py patterns/patt_dumas_feval_min=4_max=5.json```
+```python3 02_get_frequences.py```
 
-```python3 06_tests_clustering.py patterns/patt_dumas_feval_min=4_max=5.json_freq.json```
+```python3 06_tests_clustering.py```
 
 ## Préparation du corpus
 
