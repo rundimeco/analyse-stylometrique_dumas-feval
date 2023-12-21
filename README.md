@@ -2,7 +2,7 @@
 
 Ce projet s'inscrivait dans le cadre du mémoire de M2 d'Anaëlle Baledent, 
 
-NB: Le dossier data contient le corpus déjà taggé
+Le dossier code contient les scripts utilisé, le sous dossier data contient le corpus déjà taggé
 
 ## Prérequis
 Pour l'étiquetage du Corpus:
