@@ -1,8 +1,8 @@
 # Expérience sur le corpus Dumas-Féval
 
-Ce projet s'inscrit dans le cadre de mon mémoire de M2, 
+Ce projet s'inscrivait dans le cadre du mémoire de M2 d'Anaëlle Baledent, 
 
-Le dossier data contient le corpus déjà taggé
+NB: Le dossier data contient le corpus déjà taggé
 
 ## Prérequis
 Pour l'étiquetage du Corpus:
